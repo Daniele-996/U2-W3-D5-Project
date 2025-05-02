@@ -98,13 +98,6 @@ const getObjet = (e) => {
     },
     body: JSON.stringify(newValue),
   })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Problemi di rete?!");
-      }
-      return response.json();
-    })
-
     .then((obj) => {
       form.innerText = "";
       alert("Hai creato un nuovo prodotto!");
