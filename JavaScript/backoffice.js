@@ -4,23 +4,23 @@ console.log(form);
 
 const nameForm = document.createElement("label");
 nameForm.innerText = "Name";
-nameForm.for = "inputName";
+nameForm.for = "name";
 
 const descForm = document.createElement("label");
 descForm.innerText = "Description";
-descForm.for = "inputName";
+descForm.for = "description";
 
 const brandForm = document.createElement("label");
 brandForm.innerText = "Brand";
-brandForm.for = "inputName";
+brandForm.for = "brand";
 
 const urlForm = document.createElement("label");
 urlForm.innerText = "Url";
-urlForm.for = "inputName";
+urlForm.for = "url";
 
 const priceForm = document.createElement("label");
 priceForm.innerText = "Price";
-priceForm.for = "inputName";
+priceForm.for = "price";
 
 const btnSend = document.createElement("button");
 btnSend.className = "btn btn-outline-success";
