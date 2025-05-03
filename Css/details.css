@@ -17,3 +17,10 @@ nav {
 header {
   background-color: rgb(192, 54, 0);
 }
+
+.cardImg {
+  width: 100%;
+  aspect-ratio: 1.5/1;
+  object-fit: cover;
+  object-position: center;
+}

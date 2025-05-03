@@ -20,10 +20,13 @@ const newCard = () => {
     .then((object) => {
       row.innerText = "";
       object.forEach((newObj) => {
-        console.log(newObj);
+        // console.log(newObj);
+        // console.log(newObj._id);
+        const detailsURL = "./details.html?" + "id=" + newObj._id;
+        console.log(detailsURL);
 
         const col = document.createElement("div");
-        col.className = "col-12 col-md-6 col-lg-4 mb-4";
+        col.className = "col-12 col-sm-6 col-md-4 col-lg-3 mb-3 ";
 
         const colCard = document.createElement("div");
         colCard.className = "card-4 shadow p-1 mb-5 bg-body-tertiary rounded";
@@ -60,7 +63,7 @@ const newCard = () => {
 
         const btnFirst = document.createElement("a");
         btnFirst.type = "button";
-        btnFirst.href = "./details.html";
+        btnFirst.href = detailsURL;
         btnFirst.className = "btn btn-sm btn-success";
         btnFirst.innerText = "Details";
 
@@ -86,17 +89,6 @@ const newCard = () => {
         col.appendChild(colCard);
 
         row.appendChild(col);
-        console.log(newObj._id);
-
-        // fetch(URL + newObj._id, {
-        //   method: "DELETE",
-        //   headers: {
-        //     Authorization:
-        //       "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODE0OTM2NTFjMjUwNDAwMTUxYWI2YmEiLCJpYXQiOjE3NDYxODAxNDIsImV4cCI6MTc0NzM4OTc0Mn0.gqHgm9oMRMV6a9xQfr0aPRASQQqUZKE5GrJFP4pK6qE",
-        //   },
-        //   body: JSON.stringify(),
-
-        // });
       });
     })
 
@@ -107,3 +99,13 @@ const newCard = () => {
 };
 
 newCard();
+
+// fetch(URL + newObj._id, {
+//   method: "DELETE",
+//   headers: {
+//     Authorization:
+//       "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODE0OTM2NTFjMjUwNDAwMTUxYWI2YmEiLCJpYXQiOjE3NDYxODAxNDIsImV4cCI6MTc0NzM4OTc0Mn0.gqHgm9oMRMV6a9xQfr0aPRASQQqUZKE5GrJFP4pK6qE",
+//   },
+//   body: JSON.stringify(),
+
+// });

@@ -14,9 +14,20 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Shop</a>
+          <a class="navbar-brand" href="#"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"
+              ></path>
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+              ></path>
+            </svg>
+            My Shop</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -31,28 +42,54 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backoffice</a>
+                <a class="nav-link" href="./backoffice.html">Backoffice</a>
               </li>
             </ul>
             <div class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Carrello </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">I tuoi articoli</a></li>
+                <li><a class="dropdown-item">I tuoi articoli</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="#">1</a></li>
-                <li><a class="dropdown-item" href="#">2</a></li>
-                <li><a class="dropdown-item" href="#">3</a></li>
-                <li><a class="dropdown-item" href="#">4</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <h1>Details</h1>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div id="newRow" class="row d-flex justify-content-center">
+              <div class="col-6 col-md-6 col-lg-6 mb-4">
+                <h2>Prodotto</h2>
+                <div class="card shadow">
+                  <img
+                    class="bd-placeholder-img card-img-top cardImg"
+                    src="https://www.discoazul.it/uploads/media/images/apple-iphone-14-plus-128gb-blue-mq523ql-a-11.jpg"
+                    alt="Phone new generation"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Iphone 14</h5>
+                    <p id="first" class="card-text text-truncate">Phone new generation</p>
+                    <p id="second" class="card-text text-truncate">Apple</p>
+                    <p id="third" class="card-text text-truncate">1000</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
