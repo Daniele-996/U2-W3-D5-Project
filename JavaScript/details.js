@@ -44,7 +44,7 @@ window.onload = () => {
       secondP.innerText = prodDett.brand;
 
       const thirdP = document.getElementById("third");
-      thirdP.innerText = prodDett.price;
+      thirdP.innerText = prodDett.price + "€";
 
       const btn = document.getElementById("backOffBtn");
       btn.href = backOUrl;
