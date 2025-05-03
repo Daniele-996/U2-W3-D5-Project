@@ -24,6 +24,9 @@ window.onload = () => {
     .then((prodDett) => {
       console.log(prodDett);
 
+      const backOUrl = "./backoffice.html?" + "id=" + prodId;
+      console.log(backOUrl);
+
       const h2 = document.querySelector("h2");
       h2.innerText = prodDett.name;
 
@@ -42,6 +45,9 @@ window.onload = () => {
 
       const thirdP = document.getElementById("third");
       thirdP.innerText = prodDett.price;
+
+      const btn = document.getElementById("backOffBtn");
+      btn.href = backOUrl;
     })
 
     .catch((error) => {

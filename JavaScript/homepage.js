@@ -23,6 +23,7 @@ const newCard = () => {
         // console.log(newObj);
         // console.log(newObj._id);
         const detailsURL = "./details.html?" + "id=" + newObj._id;
+        const backofficeURL = "./backoffice.html?" + "id=" + newObj._id;
         console.log(detailsURL);
 
         const col = document.createElement("div");
@@ -69,6 +70,7 @@ const newCard = () => {
 
         const btnSecond = document.createElement("a");
         btnSecond.type = "button";
+        btnSecond.href = backofficeURL;
         btnSecond.className = "btn btn-sm btn-danger";
         btnSecond.innerText = "Delete";
 
